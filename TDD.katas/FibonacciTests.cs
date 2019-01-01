@@ -11,6 +11,7 @@ namespace TDD.katas
         [InlineData(0)]
         [InlineData(1)]
         [InlineData(2)]
+        [InlineData(3)]
 
         public void testNthFibonacciNumber(int number)
         {
@@ -20,6 +21,7 @@ namespace TDD.katas
             testData.Add(0,0);
             testData.Add(1,1);
             testData.Add(2,1);
+            testData.Add(3, 2);
 
 
             var resultedfibonaccinumbers = Fibonacci.FibonacciGenerator(number);
