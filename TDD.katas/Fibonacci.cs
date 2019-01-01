@@ -10,6 +10,7 @@ namespace TDD.katas
         public static int bonacciGenerator(int number)
         {
             return 0;
+           
         }
     }
 }
