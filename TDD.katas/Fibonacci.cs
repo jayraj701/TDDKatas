@@ -9,7 +9,7 @@ namespace TDD.katas
 
         public static int bonacciGenerator(int number)
         {
-            throw new NotImplementedException();
+            return 0;
         }
     }
 }
