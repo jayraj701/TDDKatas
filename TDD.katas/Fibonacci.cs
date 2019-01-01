@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 
 namespace TDD.katas
@@ -9,8 +10,13 @@ namespace TDD.katas
 
         public static int FibonacciGenerator(int number)
         {
-            return 0;
+            if (number == 0)
+                return 0;
+                   
+            return 1;
            
         }
+
+       
     }
 }

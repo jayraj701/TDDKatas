@@ -9,7 +9,7 @@ namespace TDD.katas
         [Fact]
         public void testNthFibonacci0thposition()
         {
-            var resultedfibonaccinumbers = Fibonacci.bonacciGenerator(0);
+            var resultedfibonaccinumbers = Fibonacci.FibonacciGenerator(0);
             resultedfibonaccinumbers.ShouldBe(0);
 
 
@@ -17,7 +17,7 @@ namespace TDD.katas
         [Fact]
         public void testNthFibonacci1stposition()
         {
-            var resultedfibonaccinumbers = Fibonacci.bonacciGenerator(1);
+            var resultedfibonaccinumbers = Fibonacci.FibonacciGenerator(1);
             resultedfibonaccinumbers.ShouldBe(1);
 
 
