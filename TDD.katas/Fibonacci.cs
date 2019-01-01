@@ -7,7 +7,7 @@ namespace TDD.katas
    public class Fibonacci
     {
 
-        public static int bonacciGenerator(int number)
+        public static int FibonacciGenerator(int number)
         {
             return 0;
            
