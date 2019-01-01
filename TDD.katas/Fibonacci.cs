@@ -10,11 +10,19 @@ namespace TDD.katas
 
         public static int FibonacciGenerator(int number)
         {
-            if (number == 0)
-                return 0;
-                   
-            return 1;
-           
+            int FibonacciNumber = 0;
+            int FibonacciHelper = 1;
+
+            for (int i = 0; i < number; i++)
+            {
+                var tempvalue = FibonacciNumber;
+                FibonacciNumber = FibonacciHelper ;
+                FibonacciHelper = tempvalue + FibonacciHelper;
+
+            }
+
+            return FibonacciNumber;
+
         }
 
        
