@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using  Shouldly;
 using Xunit;
 
@@ -6,21 +7,25 @@ namespace TDD.katas
 {
    public class FibonacciTests
     {
-        [Fact]
-        public void testNthFibonacci0thposition()
+        [Theory]
+        [InlineData(0)]
+        [InlineData(1)]
+        public void testNthFibonacciNumber(int number)
         {
-            var resultedfibonaccinumbers = Fibonacci.FibonacciGenerator(0);
-            resultedfibonaccinumbers.ShouldBe(0);
+           
+            Dictionary<int,int> testData = new Dictionary<int, int>();
+
+            testData.Add(0,0);
+            testData.Add(1,1);
+            testData.Add(2,1);
+
+
+            var resultedfibonaccinumbers = Fibonacci.FibonacciGenerator(number);
+
+            resultedfibonaccinumbers.ShouldBe(testData[number]);
 
 
         }
-        [Fact]
-        public void testNthFibonacci1stposition()
-        {
-            var resultedfibonaccinumbers = Fibonacci.FibonacciGenerator(1);
-            resultedfibonaccinumbers.ShouldBe(1);
-
-
-        }
+      
     }
 }
